@@ -111,12 +111,12 @@ CSS样式表是一个序列通用字符集，传输和存储过程中，这些�
 ```css
 /* 推荐 */
 .foo{
-	display:block;
+    display:block;
 }
 	
 /* 不推荐 */
 .foo{
-	DISPLAY:BLOCK;
+    DISPLAY:BLOCK;
 }
 ```
 
@@ -285,12 +285,12 @@ css属性值需要用到引号时，统一使用单引号
 ```css
 /* 推荐 */
 .foo { 
-	font-family: 'Hiragino Sans GB';
+    font-family: 'Hiragino Sans GB';
 }
 
 /* 不推荐 */
 .foo { 
-	font-family: "Hiragino Sans GB";
+    font-family: "Hiragino Sans GB";
 }
 ```
 
