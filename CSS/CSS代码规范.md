@@ -47,7 +47,7 @@ CSS样式表是一个序列通用字符集，传输和存储过程中，这些�
 ```css
 @charset "UTF-8";
 
-.jdc{}
+.foo{}
 ```
 
 *不推荐：*
@@ -56,25 +56,25 @@ CSS样式表是一个序列通用字符集，传输和存储过程中，这些�
 /**
  * @desc File Info
  * @author Author Name
- * @date 2015-10-10
+ * @date 2017-11-15
  */
  
 /* @charset规则不在文件首行首个字符开始 */
 @charset "UTF-8";
 
-.jdc{}
+.foo{}
 ```
 
 ```css
 @CHARSET "UTF-8";
 /* @charset规则没有用小写 */
 
-.jdc{}
+.foo{}
 ```
 
 ```css
 /* 无@charset规则 */
-.jdc{}
+.foo{}
 ```
 
 更多关于样式编码：[CSS style sheet representation](http://www.w3.org/TR/2011/REC-CSS2-20110607/syndata.html#charset)
@@ -86,13 +86,13 @@ CSS样式表是一个序列通用字符集，传输和存储过程中，这些�
 样式书写一般有两种：一种是紧凑格式 (Compact)
 
 ```css
-.jdc{ display: block;width: 50px;}
+.foo{ display: block;width: 50px;}
 ```
 
 一种是展开格式（Expanded）
 
 ```css
-.jdc{
+.foo{
     display: block;
     width: 50px;
 }
@@ -110,12 +110,12 @@ CSS样式表是一个序列通用字符集，传输和存储过程中，这些�
 
 ```css
 /* 推荐 */
-.jdc{
+.foo{
 	display:block;
 }
 	
 /* 不推荐 */
-.JDC{
+.foo{
 	DISPLAY:BLOCK;
 }
 ```
@@ -128,14 +128,14 @@ CSS样式表是一个序列通用字符集，传输和存储过程中，这些�
 
 ```css
 /* 推荐 */
-.jdc {}
-.jdc li {}
-.jdc li p{}
+.foo {}
+.foo li {}
+.foo li p{}
 
 /* 不推荐 */
 *{}
-#jdc {}
-.jdc div{}
+#foo {}
+.foo div{}
 ```
 
 ### 代码缩进
@@ -143,7 +143,7 @@ CSS样式表是一个序列通用字符集，传输和存储过程中，这些�
 统一使用四个空格进行代码缩进，使得各编辑器表现一致（各编辑器有相关配置）
 
 ```css
-.jdc {
+.foo {
     width: 100%;
     height: 100%;
 }
@@ -154,7 +154,7 @@ CSS样式表是一个序列通用字符集，传输和存储过程中，这些�
 每个属性声明末尾都要加分号；
 
 ```css
-.jdc {
+.foo {
     width: 100%;
     height: 100%;
 }
@@ -167,7 +167,7 @@ CSS样式表是一个序列通用字符集，传输和存储过程中，这些�
 *推荐：*
 
 ```css
-.jdc { 
+.foo { 
     width: 100%; 
 } 
 ```
@@ -175,7 +175,7 @@ CSS样式表是一个序列通用字符集，传输和存储过程中，这些�
 *不推荐：*
 
 ```css
-.jdc{ 
+.foo{ 
     width:100%;
 } 
 ```
@@ -186,7 +186,7 @@ CSS样式表是一个序列通用字符集，传输和存储过程中，这些�
 *推荐：*
 
 ```css
-.jdc {
+.foo {
     box-shadow: 1px 1px 1px #333, 2px 2px 2px #ccc;
 }
 ```
@@ -194,7 +194,7 @@ CSS样式表是一个序列通用字符集，传输和存储过程中，这些�
 *不推荐：*
 
 ```css
-.jdc {
+.foo {
     box-shadow: 1px 1px 1px #333,2px 2px 2px #ccc;
 }
 ```
@@ -204,9 +204,9 @@ CSS样式表是一个序列通用字符集，传输和存储过程中，这些�
 *推荐：*
 
 ```css
-.jdc, 
-.jdc_logo, 
-.jdc_hd {
+.foo, 
+.foo_logo, 
+.foo_hd {
     color: #ff0;
 }
 .nav{
@@ -217,7 +217,7 @@ CSS样式表是一个序列通用字符集，传输和存储过程中，这些�
 *不推荐：*
 
 ``` css
-.jdc,jdc_logo,.jdc_hd {
+.foo,foo_logo,.foo_hd {
     color: #ff0;
 }.nav{
     color: #fff;
@@ -229,7 +229,7 @@ CSS样式表是一个序列通用字符集，传输和存储过程中，这些�
 *推荐：*
 
 ```css
-.jdc {
+.foo {
     color: rgba(255,255,255,.5);
 }
 ```
@@ -237,7 +237,7 @@ CSS样式表是一个序列通用字符集，传输和存储过程中，这些�
 *不推荐：*
 
 ```css
-.jdc {
+.foo {
     color: rgba( 255, 255, 255, 0.5 );
 }
 ```
@@ -247,7 +247,7 @@ CSS样式表是一个序列通用字符集，传输和存储过程中，这些�
 *推荐：*
 
 ```css
-.jdc {
+.foo {
     color: #fff;
 }
 ```
@@ -255,7 +255,7 @@ CSS样式表是一个序列通用字符集，传输和存储过程中，这些�
 *不推荐：*
 
 ```css
-.jdc {
+.foo {
     color: #ffffff;
 }
 ```
@@ -265,7 +265,7 @@ CSS样式表是一个序列通用字符集，传输和存储过程中，这些�
 *推荐：*
 
 ```css
-.jdc {
+.foo {
     margin: 0 10px;
 }
 ```
@@ -273,7 +273,7 @@ CSS样式表是一个序列通用字符集，传输和存储过程中，这些�
 *不推荐：*
 
 ```css
-.jdc {
+.foo {
     margin: 0px 10px;
 }
 ```
@@ -284,12 +284,12 @@ css属性值需要用到引号时，统一使用单引号
 
 ```css
 /* 推荐 */
-.jdc { 
+.foo { 
 	font-family: 'Hiragino Sans GB';
 }
 
 /* 不推荐 */
-.jdc { 
+.foo { 
 	font-family: "Hiragino Sans GB";
 }
 ```
@@ -304,7 +304,7 @@ css属性值需要用到引号时，统一使用单引号
 4. 其他属性（CSS3）：content / cursor / border-radius / box-shadow / text-shadow / background:linear-gradient ...
 
 ```css
-.jdc {
+.foo {
     display: block;
     position: relative;
     float: left;
@@ -331,7 +331,7 @@ css属性值需要用到引号时，统一使用单引号
 CSS3 浏览器私有前缀在前，标准前缀在后
 
 ```css
-.jdc {
+.foo {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -o-border-radius: 10px;
